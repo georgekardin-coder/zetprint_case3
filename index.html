@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог-платформа</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Блог-платформа</h1>
+      <div id="auth-section">
+        <div id="login-form">
+          <input type="text" id="username" placeholder="Введите имя пользователя" required>
+          <button onclick="handleLogin()">Войти / Зарегистрироваться</button>
+        </div>
+        <div id="user-info" style="display: none;">
+          <span id="current-user"></span>
+          <button onclick="handleLogout()">Выйти</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="post-form" style="display: none;">
+        <h2>Создание нового поста</h2>
+        <textarea id="post-content" placeholder="Введите текст поста" rows="5"></textarea>
+        <input type="text" id="post-tags" placeholder="Теги (через запятую)">
+        <label>
+          <input type="checkbox" id="private-post">
+          Скрытый пост (доступен только по запросу)
+        </label>
+        <button onclick="handleCreatePost()">Опубликовать</button>
+      </section>
+
+      <section id="subscriptions">
+        <h2>Управление подписками</h2>
+        <div id="subscription-list"></div>
+        <input type="text" id="subscribe-to" placeholder="Имя пользователя для подписки">
+        <button onclick="handleSubscribe()">Подписаться</button>
+      </section>
+
+      <section id="feed">
+        <h2>Лента постов</h2>
+        <div id="posts-feed"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

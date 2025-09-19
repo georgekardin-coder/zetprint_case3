@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #333;
+  margin: 0;
+}
+
+#auth-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#auth-section input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-right: 10px;
+  width: 220px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#post-form, #subscriptions, #feed {
+  margin: 30px 0;
+  padding: 25px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+#post-form textarea,
+#post-form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #007bff;
+}
+
+.post.private {
+  border-left-color: #ffc107;
+  background-color: #fff8e6;
+}
+
+.post h3 {
+  margin: 0 0 10px 0;
+  color: #222;
+}
+
+.post p {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.post .meta {
+  font-size: 14px;
+  color: #777;
+  margin: 8px 0;
+}
+
+.post .tags {
+  margin: 12px 0;
+}
+
+.post .tags span {
+  display: inline-block;
+  background: #e9ecef;
+  padding: 4px 10px;
+  border-radius: 16px;
+  margin: 0 4px 4px 0;
+  font-size: 13px;
+  color: #495057;
+}
+
+.post .actions button {
+  margin-right: 8px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.comment-section {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.comment {
+  background: #f5f5f5;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.comment strong {
+  color: #007bff;
+}
+
+.subscription-item {
+  display: inline-block;
+  background: #e3f2fd;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #1565c0;
+}
+
+.subscription-item button {
+  margin-left: 8px;
+  padding: 2px 6px;
+  font-size: 12px;
+  background: #f44336;
+  color: white;
+}
+
+.subscription-item button:hover {
+  background: #d32f2f;
+}
